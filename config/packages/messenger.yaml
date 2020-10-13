@@ -18,7 +18,7 @@ framework:
                     queue_name: operator_http_notification_failed
                 retry_strategy:
                     max_retries: 0
-            
+
             update_login_link:
                 dsn: '%env(SMC_MESSENGER)%'
                 options:
@@ -82,4 +82,3 @@ framework:
             'App\Message\PayoutFailedMessage': operator_http_notification
             'App\Message\ValidateMiraklOrderMessage': validate_mirakl_order
             'App\Message\CapturePendingPaymentMessage': capture_pending_payment
-
